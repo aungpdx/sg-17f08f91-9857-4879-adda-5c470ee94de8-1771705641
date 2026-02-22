@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Olive Branch Australia | Islamic Charity & Humanitarian Aid</title>
+    <meta name="description" content="The Olive Branch Australia is an ACNC registered charity providing humanitarian aid, emergency relief, clean water, food security, and Zakat services. Tax-deductible donations over $2.">
+    <meta name="keywords" content="islamic charity, humanitarian aid, zakat, sadaqah, aqiqah, qurban, clean water, food security, emergency relief, australian charity, ACNC registered">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://toba.lovable.app/" />
+    
+    <!-- Critical CSS inlined for above-the-fold content -->
+    <style>
+      /* Base reset and fonts */
+      *,*::before,*::after{box-sizing:border-box;border-width:0;border-style:solid}
+      html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:'soleil',system-ui,sans-serif;letter-spacing:0.01em}
+      body{margin:0;line-height:inherit;background-color:hsl(0 0% 100%);color:hsl(0 0% 15%);-webkit-font-smoothing:antialiased;font-weight:400}
+      img,video{max-width:100%;height:auto;display:block}
+      h1,h2,h3,h4,h5,h6{font-family:'dovetail-mvb',serif;font-weight:500;letter-spacing:-0.02em}
+      
+      /* Hero section critical styles */
+      .hero-section{position:relative;min-height:85vh;display:flex;align-items:center;overflow:hidden}
+      @media(min-width:1024px){.hero-section{min-height:90vh}}
+      .hero-bg{position:absolute;inset:0}
+      .hero-bg img{width:100%;height:100%;object-fit:cover}
+      .hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(80,10,10,.92) 0%,rgba(60,15,15,.85) 25%,rgba(40,10,10,.75) 50%,rgba(120,25,25,.5) 75%,rgba(80,20,20,.65) 100%)}
+      .hero-content{position:relative;z-index:10;width:100%;max-width:1280px;margin:0 auto;padding:0 1rem}
+      @media(min-width:1024px){.hero-content{padding:0 2rem}}
+      .hero-text{max-width:42rem;margin-left:3rem}
+      @media(min-width:1024px){.hero-text{margin-left:5rem}}
+      .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background-color:hsl(355 85% 52%/.9);color:#fff;padding:.5rem 1rem;border-radius:9999px;font-size:.875rem;font-weight:500;margin-bottom:1.5rem}
+      .hero-title{font-size:2.25rem;font-weight:700;color:#fff;margin-bottom:1rem;line-height:1.1}
+      @media(min-width:768px){.hero-title{font-size:3rem}}
+      @media(min-width:1024px){.hero-title{font-size:3.75rem}}
+      @media(min-width:1280px){.hero-title{font-size:4.5rem}}
+      .hero-subtitle{font-size:1.25rem;color:rgba(255,255,255,.9);margin-bottom:1rem}
+      @media(min-width:768px){.hero-subtitle{font-size:1.5rem}}
+      @media(min-width:1024px){.hero-subtitle{font-size:1.875rem}}
+      .hero-desc{font-size:1rem;color:rgba(255,255,255,.85);margin-bottom:2rem;max-width:36rem;line-height:1.625}
+      @media(min-width:768px){.hero-desc{font-size:1.125rem}}
+      
+      /* Primary button */
+      .btn-primary{display:inline-flex;align-items:center;justify-content:center;border-radius:.5rem;font-weight:500;background-color:hsl(355 85% 52%);color:#fff;padding:.75rem 2rem;font-size:1rem;text-decoration:none;box-shadow:0 10px 40px -10px hsl(355 85% 52%/.3)}
+      .btn-primary:hover{background-color:hsl(355 85% 45%)}
+      
+      /* Loading state */
+      #root:empty{display:flex;align-items:center;justify-content:center;min-height:100vh}
+      #root:empty::after{content:'';width:40px;height:40px;border:3px solid hsl(0 0% 90%);border-top-color:hsl(355 85% 52%);border-radius:50%;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
+    
+    <!-- Preconnect to critical origins (max 4) -->
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://p.typekit.net" crossorigin />
+    <link rel="preconnect" href="https://qktfcgdgkkdiecnhsjks.supabase.co" crossorigin />
+    
+    <!-- Adobe Fonts (Typekit) - Non-render-blocking with font-display swap -->
+    <link rel="preload" href="https://use.typekit.net/xef6yst.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://use.typekit.net/xef6yst.css" /></noscript>
+    
+    <!-- Arabic font fallback - Noto Sans Arabic (already non-blocking) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600&display=swap" />
+    </noscript>
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://toba.lovable.app/" />
+    <meta property="og:title" content="The Olive Branch Australia | Islamic Charity & Humanitarian Aid" />
+    <meta property="og:description" content="ACNC registered charity providing humanitarian aid, emergency relief, clean water, and food security. Tax-deductible donations over $2." />
+    <meta property="og:image" content="https://toba.lovable.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="The Olive Branch Australia" />
+    <meta property="og:locale" content="en_AU" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Olive Branch Australia | Islamic Charity & Humanitarian Aid" />
+    <meta name="twitter:description" content="ACNC registered charity. Emergency relief, clean water, food security & Zakat services. Tax-deductible donations over $2." />
+    <meta name="twitter:image" content="https://toba.lovable.app/og-image.png" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+    
+    <!-- DNS Prefetch for non-critical origins -->
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://wsrv.nl" />
+    
+    <!-- Theme & Mobile -->
+    <meta name="theme-color" content="#EB1D27" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
+    <!-- Rich Results: Organization + NGO Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "NGO"],
+      "@id": "https://toba.lovable.app/#organization",
+      "name": "The Olive Branch Australia",
+      "alternateName": "TOBA",
+      "url": "https://toba.lovable.app",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://toba.lovable.app/favicon.png",
+        "width": 150,
+        "height": 150
+      },
+      "image": "https://toba.lovable.app/og-image.png",
+      "description": "The Olive Branch Australia is an ACNC registered charity providing humanitarian aid, emergency relief, clean water, food security, and Islamic charitable services. Tax-deductible donations over $2.",
+      "areaServed": [
+        { "@type": "Country", "name": "Australia" },
+        { "@type": "Country", "name": "Myanmar" },
+        { "@type": "Country", "name": "Palestine" },
+        { "@type": "Country", "name": "Yemen" },
+        { "@type": "Country", "name": "Sudan" }
+      ],
+      "knowsAbout": ["Zakat", "Aqiqah", "Qurban", "Sadaqah", "Waqf", "Fidya", "Kaffarah", "Humanitarian Aid"],
+      "sameAs": [
+        "https://www.facebook.com/theolivebranch",
+        "https://www.instagram.com/theolivebranch"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "salam@toba.charity",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Arabic"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AU"
+      },
+      "potentialAction": {
+        "@type": "DonateAction",
+        "name": "Donate to The Olive Branch Australia",
+        "target": "https://toba.lovable.app/projects",
+        "recipient": { "@id": "https://toba.lovable.app/#organization" }
+      }
+    }
+    </script>
+    
+    <!-- Rich Results: WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://toba.lovable.app/#website",
+      "name": "The Olive Branch Australia",
+      "url": "https://toba.lovable.app",
+      "publisher": { "@id": "https://toba.lovable.app/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://toba.lovable.app/projects?search={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "en-AU"
+    }
+    </script>
+    
+    <!-- Rich Results: SiteNavigationElement -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SiteNavigationElement",
+      "name": "Main Navigation",
+      "hasPart": [
+        { "@type": "WebPage", "name": "Appeals", "url": "https://toba.lovable.app/appeals/gaza-emergency" },
+        { "@type": "WebPage", "name": "Projects", "url": "https://toba.lovable.app/projects" },
+        { "@type": "WebPage", "name": "Zakat", "url": "https://toba.lovable.app/zakat" },
+        { "@type": "WebPage", "name": "Ramadan", "url": "https://toba.lovable.app/ramadan" },
+        { "@type": "WebPage", "name": "Gallery", "url": "https://toba.lovable.app/gallery" },
+        { "@type": "WebPage", "name": "Learn", "url": "https://toba.lovable.app/learn" },
+        { "@type": "WebPage", "name": "FAQ", "url": "https://toba.lovable.app/faq" }
+      ]
+    }
+    </script>
+
+    <!-- Rich Results: BreadcrumbList for Home -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://toba.lovable.app/" }
+      ]
+    }
+    </script>
+    
+    <!-- Rich Results: ItemList for Charitable Services -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Charitable Services",
+      "description": "Humanitarian and Islamic charitable services by The Olive Branch Australia",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Emergency Appeals", "url": "https://toba.lovable.app/appeals/gaza-emergency" },
+        { "@type": "ListItem", "position": 2, "name": "Clean Water", "url": "https://toba.lovable.app/projects/clean-water" },
+        { "@type": "ListItem", "position": 3, "name": "Food Security", "url": "https://toba.lovable.app/projects/food-security" },
+        { "@type": "ListItem", "position": 4, "name": "Orphan Care", "url": "https://toba.lovable.app/projects/orphan-care" },
+        { "@type": "ListItem", "position": 5, "name": "Aqiqah & Nazr", "url": "https://toba.lovable.app/projects/aqiqah-nazr" },
+        { "@type": "ListItem", "position": 6, "name": "Zakat Calculator", "url": "https://toba.lovable.app/zakat" },
+        { "@type": "ListItem", "position": 7, "name": "Ramadan Giving", "url": "https://toba.lovable.app/ramadan" }
+      ]
+    }
+    </script>
+    
+    <!-- Rich Results: SoftwareApplication for Zakat Calculator -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Zakat Calculator – The Olive Branch Australia",
+      "description": "Free online Zakat calculator with real-time gold and silver Nisab prices. Calculate your Zakat obligation accurately and pay directly.",
+      "url": "https://toba.lovable.app/zakat",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "AUD"
+      },
+      "publisher": { "@id": "https://toba.lovable.app/#organization" }
+    }
+    </script>
+    
+    <!-- Google Analytics 4 - deferred until after page load -->
+    <script>
+      // Defer GA4 loading until after the page is interactive
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.src = 'https://www.googletagmanager.com/gtag/js?id=G-BPGSPD0XGM';
+          script.async = true;
+          document.head.appendChild(script);
+          script.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-BPGSPD0XGM', { send_page_view: true });
+          };
+        }, 2000);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
+  </body>
+</html>
